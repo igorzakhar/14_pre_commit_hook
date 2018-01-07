@@ -1,13 +1,11 @@
 #!/bin/sh
 
-python3 tests.py > /dev/null 2>&1
+python3 tests.py >/dev/null 2>&1
 
-exitcode=$($?)
-
-if [ exitcode != 0 ];
+exit_code=$?
+if [ exit_code != 0 ]; 
 then
-	echo "Test failed"
-	exit $exitcode
+    echo 'test failed'
+    exit $exit_code
 fi
-
 
