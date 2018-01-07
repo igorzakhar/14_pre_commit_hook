@@ -2,7 +2,7 @@
 
 python3 tests.py > /dev/null 2>&1
 
-exitcode=$?
+exitcode=$($?)
 
 if [ exitcode != 0 ];
 then
