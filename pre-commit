@@ -6,7 +6,7 @@ exitcode = $?
 
 if [exitcode != 0];
 then
-	"Test failed"
+	echo "Test failed"
 	exit $exitcode
 fi
 
