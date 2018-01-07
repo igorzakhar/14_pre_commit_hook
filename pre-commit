@@ -1,0 +1,13 @@
+#!/bin/sh
+
+python3 tests.py > /dev/null 2>&1
+
+exitcode = $?
+
+if [exitcode != 0];
+then
+	"Test failed"
+	exit $exitcode
+fi
+
+
